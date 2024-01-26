@@ -323,7 +323,7 @@ body {
 
         
 
-        .smaller-text {
+.smaller-text {
     font-size: 16px; /* Adjust the font size as needed */
     line-height: 1; /* Reduce spacing between lines */
     text-align: center;
@@ -372,26 +372,6 @@ body {
 
 
 
-.consultation {
-    width: 33.33%;
-    text-align: center;
-    border: 1px solid white;
-    padding: 20px;
-}
-
-.consultation p {
-    margin: 0;
-}
-
-/* Additional styling for the text box */
-.consultation p {
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.consultation p:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
 
 .address {
     position:absolute;
@@ -413,31 +393,48 @@ body {
     position:absolute;
     /* Adjust top and left values to position the address column */
     top: 60px; /* Example value, adjust as needed */
-    left: 600px;
+    left: 550px;
 
 }
 
+
 .vertical-line1 {
     position: absolute;
-    /* Adjust the height as needed */
-    top: 10px; /* Adjust the top position */
-    left: 20px; /* Adjust the left position */
+    top: 35%; /* Adjust the top position to center the line in the first column */
+    left: 300px; /* Adjust the left position to align with the left of the container */
+    height: 30%; /* Set the height to 30% to cover 30% of the height of the first column */
+    border-left: 1px solid white; /* Add a left border to create the vertical line */
 }
 
 .vertical-line2 {
     position: absolute;
-  
-    height: 200px; /* Adjust the height as needed */
-    top: 50px; /* Adjust the top position */
-    left: 300px; /* Adjust the left position */
+    top: 35%; /* Adjust the top position to center the line in the second column */
+    left: 520px; /* Adjust the left position to align with the center of the container */
+    height: 30%; /* Set the height to 30% to cover 30% of the height of the second column */
+    border-left: 1px solid white; /* Add a left border to create the vertical line */
 }
 
-.vertical-line3 {
+
+.consultation {
     position: absolute;
-    height: 200px; /* Adjust the height as needed */
-    top: 100px; /* Adjust the top position */
-    left: 400px; /* Adjust the left position */
+    top: 90px; /* Adjust the top position to place the text box where you want */
+    left: 750px; /* Adjust the left position to place the text box where you want */
 }
+
+.consultation-box {
+    background-color: rgb(161, 138, 79); /* Background color of the text box */
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 5px;
+    padding: 10px; /* Adjust padding as needed */
+    width: 200px;
+    height: 30px; /* Adjust the width of the text box */
+    margin: 0 auto; 
+    border: 1px solid white; /* Center the text box horizontally within its container */
+}
+
+
 
 
 
@@ -535,9 +532,10 @@ body {
                 <p>&copy; 2023 by Main Events.</p>
             </div>
         </div>
-        <div class="vertical-line3"></div>
         <div class="consultation">
+            <div class="consultation-box">
             <p>BOOK A CONSULTATION</p>
+        </div>
         </div>
     </div>
 </body>
