@@ -1,473 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>My Web Page</title>
-    <style>
-
-
-body {
-    width: 100%;
-    margin: 0 auto; /* Center content */
-}
-
-
-.main-container {
-    width: 1239px; /* Fixed width */
-    margin: 0 auto; /* Center the container */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-
-.image-container  {
-            position: absolute;
-            display: inline-block;
-            top: 0px;
-            left: 0px; 
-            width: 1239px;
-            height: 1200px;
-            background-image: url('image3.png');
-            background-attachment: fixed;
-            background-position: 0 0px;
-            background-size: 1239px 1300px;
-            background-repeat: no-repeat;
-            
-}
-
-
-.image-container img {
-    width: 50%; /* Makes the image scale to the width of its container */
-    height: 100%;
-    /* Maintains the aspect ratio of the image */
-}
-
-
-.text-on-image {
-            position: absolute;
-            top: 37%;
-            left: 53%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 46px;
-            letter-spacing: 15px;
-            line-height: 1.6;
-        }
-
-        #new-images {
-            display: flex;
-            justify-content: space-between; /* This will add space between the images */
-            padding-top: 50px; 
-            align-items: flex-end; 
-            /* Space below your first image */
-        }
-
-      
-        .flower-image-container  {
-            position: absolute;
-            display: inline-block;
-            top: 1380px;
-            left: 50px; 
-            width: 420px;
-            height: auto;
-        }
-
-
-        .flower-image-container img {
-    width: 100%; /* Makes the image scale to the width of its container */
-    height: 100%; /* Maintains the aspect ratio of the image */
-}
-
-        .text-overlay .line {
-            position: absolute;
-            color: white; /* Choose your color */
-        }
-
-        .image1-container{
-            width: 660px;
-            height: 596px;
-            position: absolute;
-            display: inline-block;
-            top: 1380px;
-            left: 530px; }
-
-        .image1-container img{
-            width: 100%;
-            height: 100%;
-        }
-
-        .line1 {
-            position:absolute;
-            top: 23%; /* Adjust as needed */
-            left: 25%; /* Adjust as needed */
-            font-size: 30px;
-            letter-spacing: 10px;
-            color: white;
-        }
-
-        .line2 {
-            position:absolute;
-            top: 48%; /* Adjust as needed */
-            left: 25%; /* Adjust as needed */
-            font-size: 20px;
-            color: white;
-            letter-spacing: 2.5px;
-        }
-
-        .line3 {
-            position:absolute;
-            top: 57%; /* Adjust as needed */
-            left: 43%; /* Adjust as needed */
-            font-size: 20px;
-            color: white;
-            letter-spacing: 2px;
-        }
-
-        .discover-block {
-            position:absolute;
-            top: 70%;
-            left: 23%;
-            color: white; /* Text color */
-            border: 1px solid white; /* White border */
-            padding: 20px 80px; /* Adjust padding as needed */
-            font-size: 15px; /* Adjust font size as needed */
-            display: inline-block; /* Makes the div inline with text */
-             /* Space above the block */
-            background-color: transparent;
-            letter-spacing: 1px; /* No background color */
-        }
-
-        ul, li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-        nav {
-            background-color: white; /* White background */
-            position: fixed; /* Fixed at the top */
-            width: 100%; /* Full width */
-            top: 0; /* Stick to the top */
-            left: 0; /* Align left */
-            z-index: 1000;
-            height: 80px; /* Ensure it's above other items */
-        }
-
-
-        /* Styling for individual navigation items */
-       
-        
-
+    <link rel="stylesheet" href="styles.css">
     
-        .nav-item1 a{
-            position:absolute;
-            top:20px;
-            left:180px;
-            font-size: 20px;
-            color: rgb(161, 138, 79);
-            text-decoration: none; /* Remove underline */
-            list-style-type: none; 
-            /* CSS for the
-             first navigation item */
-        }
-
-        .nav-item2 a{
-            position:absolute;
-            top:20px;
-            left:700px;
-            font-size: 20px;
-            color: rgb(161, 138, 79);
-            text-decoration: none; /* Remove underline */
-            list-style-type: none; 
-            /* CSS for the second navigation item */
-        }
-
-        .nav-item3 a{
-            position:absolute;
-            top:20px;
-            left:800px;
-            font-size: 20px;
-            color: black;
-            text-decoration: none; /* Remove underline */
-            list-style-type: none; 
-            /* CSS for the third navigation item */
-        }
-
-        .nav-item4 a{
-            position:absolute;
-            top:20px;
-            left:900px;
-            font-size: 20px;
-            color: black;
-            text-decoration: none; /* Remove underline */
-            list-style-type: none; 
-            /* CSS for the fourth navigation item */
-        }
-
-        .nav-item5 a{
-            position:absolute;
-            top:20px;
-            left:1000px;
-            font-size: 20px;
-            color: black;
-            text-decoration: none; /* Remove underline */
-            list-style-type: none; 
-            /* CSS for the fifth navigation item */
-        }
-
-        .nav-item6 a{
-            position:absolute;
-            top:20px;
-            left:1100px;
-            font-size: 20px;
-            color: black;
-            text-decoration: none; /* Remove underline */
-            list-style-type: none; 
-            /* CSS for the fifth navigation item */
-        }
-
-
-
-        /* Change the color to rgb(161, 138, 79) when hovering over other items */
-        .nav-item3, a:hover {
-            color: rgb(161, 138, 79);
-        }
-        .nav-item4, a:hover {
-            color: rgb(161, 138, 79);
-        }
-        .nav-item5, a:hover {
-            color: rgb(161, 138, 79);
-        }
-        .nav-item6, a:hover {
-            color: rgb(161, 138, 79);
-        }
-
-
-
-/* Styles for individual lines of text */
-
-.text-below-images .line1{
-    position: absolute;
-    top: 2080px;
-    left: 580px;
-    color: black; /* Example color */
-    font-size: 80px; 
-}
-
-
-.text-below-images .line2{
-    position: absolute;
-    top: 2200px;
-    left: 400px;
-    color: black; /* Example color */
-    font-size: 30px; 
-}
-
-
-.text-below-images .line3{
-    position: absolute;
-    top: 2250px;
-    left: 400px;
-    color: black; /* Example color */
-    font-size: 30px; 
-}
-
-
-.text-below-images .line4{
-    position: absolute;
-    top: 2300px;
-    left: 400px;
-    color: black; /* Example color */
-    font-size: 30px; 
-}
-
-
-.text-below-images .line5{
-    position: absolute;
-    top: 2380px;
-    left: 550px;
-    color: black; /* Example color */
-    font-size: 15px; 
-}
-
-
-.image2-container {
-    position: absolute;
-    top: 2600px; /* Adjust this value based on the space taken by the text */
-    left: 50px; 
-    width: 1140px; 
-    height: 1000px;
-
-    background-image: url('image2.png');
-    background-attachment: fixed;
-    background-position: 0 0px;
-    background-size: 1239px 1300px;
-    background-repeat: no-repeat;
-   
-}
-
-.image2-container img {
-    width: 100%; /* Makes the image scale to the width of its container */
-    height: 100%; /* Maintains the aspect ratio of the image */
-}
-
-
-
-.flower-image-container1  {
-            position: absolute;
-            display: inline-block;
-            top: 100px;
-            left: 600px; 
-            width: 420px;
-            height: auto;
-        }
-
-        
-
-.smaller-text {
-    font-size: 16px; /* Adjust the font size as needed */
-    line-height: 1; /* Reduce spacing between lines */
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* Add this CSS to vertically align the three rows in the middle part of the column */
-.smaller-text p {
-    margin: 0; /* Remove default margin */
-    padding: 10px 0; /* Adjust vertical spacing as needed */
-}
-
-    .box-below-image2 {
-    position: absolute;
-    top: 3700px;
-    left: 50px;
-    width: 1140px;
-    height: 200px;
-    background-color: rgb(161, 138, 79);
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    line-height: 1.6;
-    overflow: hidden;
-    display: flex;
-}
-
-.column {
-    width: 33.33%;
-    text-align: left;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0; /* Remove default margin */
-    padding: 10px 0;
-}
-
-.column p {
-    margin: 0; /* Remove default margin */
-    padding: 10px 0; /* Adjust vertical spacing as needed */
-}
-
-
-
-
-.address {
-    position:absolute;
-    /* Adjust top and left values to position the address column */
-    top: 60px; /* Example value, adjust as needed */
-    left: 150px;
-    line-height: 0.3; /* Example value, adjust as needed */
-}
-
-.contact {
-    position:absolute;
-    /* Adjust top and left values to position the address column */
-    top: 60px; /* Example value, adjust as needed */
-    left: 350px;
-    line-height: 0.1; /* Example value, adjust as needed */
-}
-
-.copyright{
-    position:absolute;
-    /* Adjust top and left values to position the address column */
-    top: 60px; /* Example value, adjust as needed */
-    left: 550px;
-
-}
-
-
-.vertical-line1 {
-    position: absolute;
-    top: 35%; /* Adjust the top position to center the line in the first column */
-    left: 300px; /* Adjust the left position to align with the left of the container */
-    height: 30%; /* Set the height to 30% to cover 30% of the height of the first column */
-    border-left: 1px solid white; /* Add a left border to create the vertical line */
-}
-
-.vertical-line2 {
-    position: absolute;
-    top: 35%; /* Adjust the top position to center the line in the second column */
-    left: 520px; /* Adjust the left position to align with the center of the container */
-    height: 30%; /* Set the height to 30% to cover 30% of the height of the second column */
-    border-left: 1px solid white; /* Add a left border to create the vertical line */
-}
-
-
-.consultation {
-    position: absolute;
-    top: 90px; /* Adjust the top position to place the text box where you want */
-    left: 750px; /* Adjust the left position to place the text box where you want */
-}
-
-.consultation-box {
-    background-color: rgb(161, 138, 79); /* Background color of the text box */
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    line-height: 5px;
-    padding: 10px; /* Adjust padding as needed */
-    width: 200px;
-    height: 30px; /* Adjust the width of the text box */
-    margin: 0 auto; 
-    border: 1px solid white; /* Center the text box horizontally within its container */
-}
-
-
-
-
-
-
-    </style>
-
+ 
 </head>
+
 <body>
 
     <nav>
         <ul>
-            <li class="nav-item1"><a href="page1.html">MAIN EVENTS</a></li>
-            <li class="nav-item2"><a href="page1.html">Home</a></li>
-            <li class="nav-item3"><a href="page2.html">Services</a></li>
-            <li class="nav-item4"><a href="page2.html">About</a></li>
-            <li class="nav-item5"><a href="page2.html">Gallery</a></li>
-            <li class="nav-item6"><a href="page2.html">Contact</a></li>
+            <li class="nav-item1"><a>MAIN EVENTS</a></li>
+            <li class="nav-item2"><a href="page2.html#home">Home</a></li>
+            <li class="nav-item3"><a href="page2.html#services">Services</a></li>
+            <li class="nav-item4"><a href="page2.html#about">About</a></li>
+            <li class="nav-item5"><a href="page2.html#gallery">Gallery</a></li>
+            <li class="nav-item6"><a href="page2.html#contact">Contact</a></li>
         </ul>
     </nav>
 
     <div class="image-container">
         <div class="text-on-image">
-            Creating<br>Unforgettable<br>Memories
+            <div class="line-text1">Creating</div>
+            <div class="line-text2">Unforgettable</div>
+            <div class="line-text3">Memories</div>
         </div>
+        
     </div>
 
     <div id="new-images">
         <div class="flower-image-container" >
             <img src="flower.png" alt="Flower">
             <div class="text-overlay">
-                <span class="line1">SERVICES</span>
-                <span class="line2">Turn the dream into a</span>
-                <span class="line3">reality</span>
+                <span class="line11">SERVICES</span>
+                <span class="line22">Turn the dream into a</span>
+                <span class="line33">reality</span>
 
                 <div class="discover-block">
                     DISCOVER
@@ -491,13 +60,28 @@ body {
     </div>
 
 
+    <div class="arrow arrow-left">
+        <div class="arrow-line"></div>
+        <div class="arrow-head arrow-head-left"></div>
+        <div class="arrow-head arrow-head-right"></div>
+    </div>
+    
+    <div class="arrow arrow-right">
+        <div class="arrow-line"></div>
+        <div class="arrow-head arrow-head-left"></div>
+        <div class="arrow-head arrow-head-right"></div>
+    </div>
+    
+
+
+
     <div class="image2-container">
         <div class="flower-image-container1" >
             <img src="flower.png" alt="Flower">
-            <div class="text-overlay">
-                <span class="line1">SERVICES</span>
-                <span class="line2">Turn the dream into a</span>
-                <span class="line3">reality</span>
+            <div class="text-overlay1">
+                <span class="line1">GALLERY</span>
+                <span class="line2">Unforgettable</span>
+                <span class="line3">Memories</span>
 
                 <div class="discover-block">
                     DISCOVER
@@ -538,5 +122,9 @@ body {
         </div>
         </div>
     </div>
+
+
+    <div class="bottom-space"></div>
+
 </body>
 </html>

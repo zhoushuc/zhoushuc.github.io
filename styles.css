@@ -1,0 +1,602 @@
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px; /* Center content */
+}
+
+
+.main-container {
+    width: 1239px; /* Fixed width */
+    margin: 0 auto; /* Center the container */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+.image-container  {
+            position: absolute;
+            display: inline-block;
+            top: 0px;
+            left: 0px; 
+            width: 1239px;
+            height: 810px;
+            background-image: url('image3.png');
+            background-attachment: fixed;
+            background-position: 0px 0px;
+            background-size: 1239px 1100px;
+            background-repeat: no-repeat;
+            
+}
+
+
+.image-container img {
+    width: 50%; /* Makes the image scale to the width of its container */
+    height: 100%;
+    /* Maintains the aspect ratio of the image */
+}
+
+
+
+
+.line-text1, .line-text2, .line-text3 {
+    color: white;
+    font-size: 46px;
+    letter-spacing: 15px;
+    line-height: 1.6;
+    /* Add more common styles here */
+}
+
+.line-text1 {
+    position:absolute;
+    top: 35%;
+    left: 37%;
+    /* Specific styles for "Creating" */
+}
+
+.line-text2 {
+    position:absolute;
+    top: 44%;
+    left: 30%;
+    /* Specific styles for "Unforgettable" */
+}
+
+.line-text3 {
+    position:absolute;
+    top: 53%;
+    left: 36%;
+    /* Specific styles for "Memories" */
+}
+        #new-images {
+            display: flex;
+            justify-content: space-between; /* This will add space between the images */
+            padding-top: 50px; 
+            align-items: flex-end; 
+            /* Space below your first image */
+        }
+
+      
+        .flower-image-container  {
+            position: absolute;
+            display: inline-block;
+            top: 881.85px;
+            left: 71.85px; 
+            width: 346.93px;
+            height: 512.97px;
+            height: 525.97px;
+        
+        }
+
+       
+
+        .flower-image-container img {
+    width: 100%; /* Makes the image scale to the width of its container */
+    height: 100%; /* Maintains the aspect ratio of the image */
+}
+
+        .text-overlay .line {
+            position: absolute;
+            color: white; /* Choose your color */
+        }
+
+        .image1-container{
+            width: 676.52px;
+            height: 525.97px;
+            position: absolute;
+            display: inline-block;
+            top: 881.85px;
+            left: 490.63px; }
+
+        .image1-container img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .line11 {
+            position:absolute;
+            top: 23%; /* Adjust as needed */
+            left: 20%; /* Adjust as needed */
+            font-size: 30px;
+            letter-spacing: 12px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .line22 {
+            position:absolute;
+            top: 48%; /* Adjust as needed */
+            left: 20%; /* Adjust as needed */
+            font-size: 20px;
+            color: white;
+            letter-spacing: 2.5px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .line33 {
+            position:absolute;
+            top: 57%; /* Adjust as needed */
+            left: 43%; /* Adjust as needed */
+            font-size: 20px;
+            color: white;
+            letter-spacing: 2px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .discover-block {
+            position:absolute;
+            top: 70%;
+            left: 15%;
+            color: white; /* Text color */
+            border: 1px solid white; /* White border */
+            padding: 15px 82px; /* Adjust padding as needed */
+            font-size: 15px; /* Adjust font size as needed */
+            display: inline-block; /* Makes the div inline with text */
+             /* Space above the block */
+            background-color: transparent;
+            letter-spacing: 1px;
+            font-family: Arial, sans-serif; /* No background color */
+        }
+
+        ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+        nav {
+            background-color: white; /* White background */
+            position: fixed; /* Fixed at the top */
+            width: 100%; /* Full width */
+            top: 0; /* Stick to the top */
+            left: 0; /* Align left */
+            z-index: 1000;
+            height: 90px; /* Ensure it's above other items */
+        }
+
+
+        /* Styling for individual navigation items */
+       
+        
+
+
+        .nav-item1 a{
+            position:absolute;
+            top:33px;
+            left:180px;
+            font-size: 20px;
+            color: rgb(161, 138, 79);
+            text-decoration: none; /* Remove underline */
+            list-style-type: none; 
+            font-family: Arial, sans-serif;
+            /* CSS for the
+             first navigation item */
+        }
+
+        .nav-item2 a{
+            position:absolute;
+            top:33px;
+            left:700px;
+            font-size: 20px;
+            color: rgb(161, 138, 79);
+            text-decoration: none; /* Remove underline */
+            list-style-type: none; 
+            font-family: Arial, sans-serif;
+            /* CSS for the second navigation item */
+        }
+
+        .nav-item3 a{
+            position:absolute;
+            top:33px;
+            left:800px;
+            font-size: 20px;
+            color: black;
+            text-decoration: none; /* Remove underline */
+            list-style-type: none; 
+            font-family: Arial, sans-serif;
+            /* CSS for the third navigation item */
+        }
+
+        .nav-item4 a{
+            position:absolute;
+            top:33px;
+            left:910px;
+            font-size: 20px;
+            color: black;
+            text-decoration: none; /* Remove underline */
+            list-style-type: none; 
+            font-family: Arial, sans-serif;
+            /* CSS for the fourth navigation item */
+        }
+
+        .nav-item5 a{
+            position:absolute;
+            top:33px;
+            left:1000px;
+            font-size: 20px;
+            color: black;
+            text-decoration: none; /* Remove underline */
+            list-style-type: none; 
+            font-family: Arial, sans-serif;
+            /* CSS for the fifth navigation item */
+        }
+
+        .nav-item6 a{
+            position:absolute;
+            top:33px;
+            left:1100px;
+            font-size: 20px;
+            color: black;
+            text-decoration: none; /* Remove underline */
+            list-style-type: none; 
+            font-family: Arial, sans-serif;
+            /* CSS for the fifth navigation item */
+        }
+
+
+
+        /* Change the color to rgb(161, 138, 79) when hovering over other items */
+        .nav-item3, a:hover {
+            color: rgb(161, 138, 79);
+        }
+        .nav-item4, a:hover {
+            color: rgb(161, 138, 79);
+        }
+        .nav-item5, a:hover {
+            color: rgb(161, 138, 79);
+        }
+        .nav-item6, a:hover {
+            color: rgb(161, 138, 79);
+        }
+
+
+
+/* Styles for individual lines of text */
+
+.text-below-images .line1{
+    position: absolute;
+    top: 1570px;
+    left: 590px;
+    color: black; /* Example color */
+    font-size: 80px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.text-below-images .line2{
+    position: absolute;
+    top: 1750px;
+    left: 360px;
+    color: black; /* Example color */
+    font-size: 32px; 
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+}
+
+
+.text-below-images .line3{
+    position: absolute;
+    top: 1800px;
+    left: 350px;
+    color: black; /* Example color */
+    font-size: 32px; 
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+}
+
+
+.text-below-images .line4{
+    position: absolute;
+    top: 1850px;
+    left: 360px;
+    color: black; /* Example color */
+    font-size: 32px; 
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+}
+
+
+.text-below-images .line5{
+    position: absolute;
+    top: 1950px;
+    left: 550px;
+    color: rgb(161, 138, 79); /* Example color */
+    font-size: 15px; 
+    font-family: Arial, sans-serif;
+}
+
+
+.image2-container {
+    position: absolute;
+    top: 2150px; /* Adjust this value based on the space taken by the text */
+    left: 76.8px; 
+    width: 1085.4px; 
+    height: 702.93px;
+
+    background-image: url('image2.png');
+    background-attachment: fixed;
+    background-position: 0 0px;
+    background-size: 1239px 1300px;
+    background-repeat: no-repeat;
+   
+}
+
+.image2-container img {
+    width: 100%; /* Makes the image scale to the width of its container */
+    height: 100%; /* Maintains the aspect ratio of the image */
+}
+
+
+
+.flower-image-container1  {
+            position: absolute;
+            display: inline-block;
+            top: 76.8px;
+            left: 660.45px; 
+            width: 348.15px;
+            height: 552.94px;
+        }
+
+        .text-overlay1 
+
+
+        .line1 {
+            position:absolute;
+            top: 23%; /* Adjust as needed */
+            left: 20%; /* Adjust as needed */
+            font-size: 30px;
+            letter-spacing: 12px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .line2 {
+            position:absolute;
+            top: 48%; /* Adjust as needed */
+            left: 23%; /* Adjust as needed */
+            font-size: 22px;
+            color: white;
+            letter-spacing: 7px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .line3 {
+            position:absolute;
+            top: 57%; /* Adjust as needed */
+            left: 30%; /* Adjust as needed */
+            font-size: 20px;
+            color: white;
+            letter-spacing: 7px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .discover-block {
+            position:absolute;
+            top: 70%;
+            left: 15%;
+            color: white; /* Text color */
+            border: 1px solid white; /* White border */
+            padding: 15px 82px; /* Adjust padding as needed */
+            font-size: 15px; /* Adjust font size as needed */
+            display: inline-block; /* Makes the div inline with text */
+             /* Space above the block */
+            background-color: transparent;
+            letter-spacing: 1px;
+            font-family: Arial, sans-serif; /* No background color */
+        }
+
+     
+.smaller-text {
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1; /* Reduce spacing between lines */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Add this CSS to vertically align the three rows in the middle part of the column */
+.smaller-text p {
+    margin: 0; /* Remove default margin */
+    padding: 10px 0; /* Adjust vertical spacing as needed */
+}
+
+    .box-below-image2 {
+    position: absolute;
+    top: 3000px;
+    left: 76.8px;
+    width: 1085.4px;
+    height: 193.3px;
+    background-color: rgb(161, 138, 79);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    line-height: 1.6;
+    overflow: hidden;
+    display: flex;
+    padding-bottom: 50px; 
+}
+
+.column {
+    width: 33.33%;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove default margin */
+    padding: 10px 0;
+}
+
+.column p {
+    margin: 0; /* Remove default margin */
+    padding: 10px 0; /* Adjust vertical spacing as needed */
+}
+
+
+
+
+.address {
+    position:absolute;
+    /* Adjust top and left values to position the address column */
+    top: 80px; /* Example value, adjust as needed */
+    left: 100px;
+    line-height: 0.3; 
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.contact {
+    position:absolute;
+    /* Adjust top and left values to position the address column */
+    top: 80px; /* Example value, adjust as needed */
+    left: 280px;
+    line-height: 0.1; 
+    font-family: Arial, sans-serif;
+    font-size: 15px;/* Example value, adjust as needed */
+}
+
+.copyright{
+    position:absolute;
+    /* Adjust top and left values to position the address column */
+    top: 75px; /* Example value, adjust as needed */
+    left: 470px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+
+}
+
+
+.vertical-line1 {
+    position: absolute;
+    top: 32%; /* Adjust the top position to center the line in the first column */
+    left: 250px; /* Adjust the left position to align with the left of the container */
+    height: 35%; /* Set the height to 30% to cover 30% of the height of the first column */
+    border-left: 1px solid white; /* Add a left border to create the vertical line */
+}
+
+.vertical-line2 {
+    position: absolute;
+    top: 32%; /* Adjust the top position to center the line in the second column */
+    left: 435px; /* Adjust the left position to align with the center of the container */
+    height: 35%; /* Set the height to 30% to cover 30% of the height of the second column */
+    border-left: 1px solid white; /* Add a left border to create the vertical line */
+}
+
+
+.consultation {
+    position: absolute;
+    top: 95px; /* Adjust the top position to place the text box where you want */
+    left: 750px; /* Adjust the left position to place the text box where you want */
+}
+
+.consultation-box {
+    background-color: rgb(161, 138, 79); /* Background color of the text box */
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 0px;
+    padding: 9px; /* Adjust padding as needed */
+    width: 200px;
+    height: 28px; /* Adjust the width of the text box */
+    margin: 0 auto; 
+    border: 1px solid white;
+    font-family: Arial, sans-serif; 
+    font-size: 15px;/* Center the text box horizontally within its container */
+}
+
+
+.arrow {
+    position: absolute;
+    height: 2px; /* Height of the arrow shaft */
+    width: 50px; /* Length of the arrow shaft */
+}
+
+.arrow-line {
+    background-color: rgb(161, 138, 79);;
+    height: 100%;
+    width: 100%;
+}
+
+.arrow-head {
+    position: absolute;
+    background-color: rgb(161, 138, 79);;
+    height: 2px;
+    width: 8px; /* Length of the arrowhead lines */
+    top: 0;
+}
+
+.arrow-left .arrow-head-left {
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+
+.arrow-left .arrow-head-right {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+}
+
+.arrow-right .arrow-head {
+    right: 0; /* Position the arrowhead at the right end of the shaft */
+}
+
+.arrow-right .arrow-head-left {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+}
+
+.arrow-right .arrow-head-right {
+    transform: rotate(45deg);
+    transform-origin: top right;
+}
+
+.arrow-left {
+    left: 76.8px; /* Position of the left arrow */
+    top: 1800px; /* Adjust vertical position as needed */
+}
+
+.arrow-right {
+    right: 76.8px; /* Position of the right arrow */
+    top: 1800px; /* Adjust vertical position as needed */
+}
+
+.top-left-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px; /* Adds a little space from the top and left edges */
+    font-size: 20px; 
+    font-weight: bold;/* Adjust the font size as needed */
+}
+.top-left-text p {
+    margin: 0; /* Removes default margin */
+    line-height: 1.2; /* Reduces line height for less gap between lines */
+    padding-bottom: 15px; /* Adjust this value to control the gap between lines */
+}
+
+.bottom-space {
+    position: absolute;
+    top: 3193.3px;
+    width: 1239px;
+    height: 80px; /* Adjust the height to control the space */
+}
